@@ -1,0 +1,49 @@
+
+In AWS Open EC2 from Compute which is in menu option
+
+Create Instance set key and tcp and port and key file will be download automatically
+
+After configure launch Instance then there is menu option SSH Client click on it.
+
+copy SSH Client command and then open git bash at that same key file directory
+
+paste SSH Client key and hit enter ssh -i "my-ec2-key.pem" ec2-user@ec2-3-80-112-53.compute-1.amazonaws.com
+
+then Run command for update - sudo yum update
+
+then install git - sudo yum install git -y
+
+then run commwnd to clone node app api - https://github.com/Kaleakash/ec2_express_app.git
+
+checked node version - node --version
+if get this error /> -bash: node: command not found
+
+========== Run some more command before installing node
+
+then run command - curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+
+then run command - . ~/.nvm/nvm.sh
+
+then run command - ' nvm install node ' and checked node version
+if get this same error /> -bash: node: command not found
+
+
+then run this command and check version - nvm install 4.4.5
+
+if get same version then we have to go for latest with this process
+1. Run this command - npm config delete prefix
+2. Run this command - npm config set prefix $NVM_DIR/versions/node/v4.4.5
+3. Run this Command - nvm install 12.1.0
+
+then check node is it same or not
+then go to same clone drive app using - cd folder/project name
+then install node module using - npm install
+then Run project using - node fileName
+
+
+
+
+
+
+
+
