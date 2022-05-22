@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "docProjectforphsaefour": {
+    "angular-docker-app": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/doc-projectforphsaefour",
+            "outputPath": "dist/angular-docker-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -68,10 +68,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "docProjectforphsaefour:build:production"
+              "browserTarget": "angular-docker-app:build:production"
             },
             "development": {
-              "browserTarget": "docProjectforphsaefour:build:development"
+              "browserTarget": "angular-docker-app:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -79,7 +79,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "docProjectforphsaefour:build"
+            "browserTarget": "angular-docker-app:build"
           }
         },
         "test": {
@@ -102,5 +102,5 @@
       }
     }
   },
-  "defaultProject": "docProjectforphsaefour"
+  "defaultProject": "angular-docker-app"
 }
